@@ -13,15 +13,11 @@ optional = true
 version = "0.1.5"
 path = "./failure_derive"
 
-[dependencies.backtrace]
-optional = true
-version = "0.3.3"
-
 [workspace]
 members = [".", "failure_derive"]
 
 [features]
 default = ["std", "derive"]
 #small-error = ["std"]
-std = ["backtrace"]
+std = []
 derive = ["failure_derive"]
